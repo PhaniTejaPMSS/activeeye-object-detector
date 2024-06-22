@@ -2,16 +2,17 @@
 
 ## Overview
 
-* This project features an object detection website where users can upload videos, which are then processed by a Flask backend to detect objects. The frontend is built using React JS [Vite], and the backend is built using Flask. The processed video is saved in the 'static' folder inside the server folder.
-* This repository uses pre-trained MobileNet-SSD v3 model for Object Detection. The model uses COCO dataset for training. The COCO dataset consists of 80 classes of objects. [View Data](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
+* This project features an object detection website where users can upload videos, which are then processed by a Flask backend to detect objects.
+* The frontend is built using React JS [Vite], and the backend is built using Flask. The processed video is saved in the 'static' folder inside the server folder.
+* This backend uses pre-trained SSD MobileNet v3 model for Object Detection. The model uses COCO dataset for training. The COCO dataset consists of 80 classes of objects. [View Data](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
 
 ![Home Page](https://github.com/PhaniTejaPMSS/activeeye-object-detector/assets/109794469/2521c407-7aa1-427a-9139-3fc7fb431377)
 
 ## Features
 
 - **Video Upload**: Users can upload videos directly from the website.
-- **Object Detection**: Utilizes advanced model SSD-MobileNetV3 to detect objects in the uploaded videos.
-- **Processed Video Output**: Saves the processed video with detected objects in the server's static folder.
+- **Object Detection**: Utilizes advanced model SSD MobileNet v3 to detect objects in the uploaded videos.
+- **Processed Video Output**: Saves the processed video with detected objects in the server's `static` folder.
 
 ## Project Structure
 ```
@@ -49,8 +50,9 @@
 
 Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/object-detection-website.git
-   cd object-detection-website
+   git clone https://github.com/PhaniTejaPMSS/activeeye-object-detector.git
+
+   cd activeeye-object-detector
    ```
 
 ### Setting Up the Client
@@ -85,6 +87,7 @@ Clone the repository:
 
     ```bash
     python -m venv venv
+    
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
